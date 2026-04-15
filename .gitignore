@@ -1,0 +1,13 @@
+.env
+env/
+venv/
+.venv/
+__pycache__/
+
+
+# Tailwind CSS output
+website/static/dist/
+
+node_modules/
+
+.vscode/

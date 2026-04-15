@@ -1,13 +1,19 @@
-.env
+# Python
+__pycache__/
+
+# Virtual environments
 env/
 venv/
 .venv/
-__pycache__/
 
+# Environment variables
+.env
 
-# Tailwind CSS output
-website/static/dist/
-
+# Node
 node_modules/
 
+# Tailwind build output
+website/static/dist/
+
+# VS Code
 .vscode/

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+<div class="grid grid-cols-2 lg:grid-cols-3 h-screen bg-[url('/static/images/bfp-bg.jpg')] bg-cover bg-center">
+  <div class="col-span-1 lg:col-span-2 bg-black/60 flex items-start justify-end p-20 flex-col">
+    <span class="text-white bg-sky-600/50 px-3 py-1 rounded-full border border-sky-600 mb-2">Welcome</span>
+    <span class="text-white font-bold text-4xl mb-3">Bureau of Fire Protection</span>
+    <span class="text-white text-base font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ad iste nostrum voluptates ipsa? Recusandae ea quisquam laborum odit nulla optio totam eum debitis porro cum aliquam asperiores, ratione ducimus.</span>
+  </div>
+  <div class="col-span-1 bg-white p-10 flex items-start justify-center flex-col">
+    <span class="text-3xl font-bold">Sign Up</span>
+    <span class="text-base font-light">Create a new account to get started.</span>
+    <form action="" class="mt-8 mb-10 w-full">
+        <div class="grid grid-cols-2 gap-5 mb-5">
+            <div>
+                <label for="" class="text-base font-semibold text-gray-500">FIRST NAME <span class="text-red-500">*</span></label>
+                <input type="text" name="" id="" placeholder="ex. John" class="text-base px-3 py-2 rounded-md bg-gray-100 outline-sky-600 w-full"/>
+            </div>
+            <div>
+                <label for="" class="text-base font-semibold text-gray-500">LAST NAME <span class="text-red-500">*</span></label>
+                <input type="text" name="" id="" placeholder="ex. Doe" class="text-base px-3 py-2 rounded-md bg-gray-100 outline-sky-600 w-full"/>
+            </div>
+        </div>
+      <div class="flex flex-col mb-5">
+        <label for="" class="text-base font-medium">EMAIL <span class="text-red-500">*</span></label>
+        <input type="email" name="" id="" placeholder="ex. john.doe@example.com" class="text-base px-3 py-2 rounded-md bg-gray-100 outline-sky-600"/>
+      </div>
+      <div class="flex flex-col mb-5">
+        <label for="" class="text-base font-medium">ADDRESS <span class="text-red-500">*</span></label>
+        <input type="text" name="" id="" placeholder="ex. 123 Main St" class="text-base px-3 py-2 rounded-md bg-gray-100 outline-sky-600"/>
+      </div>
+      <div class="grid grid-cols-2 gap-5 mb-5">
+            <div>
+                <label for="" class="text-base font-semibold text-gray-500">CREATE PASSWORD <span class="text-red-500">*</span></label>
+                <input type="password" name="" id="" placeholder="ex. John123" class="text-base px-3 py-2 rounded-md bg-gray-100 outline-sky-600 w-full"/>
+            </div>
+            <div>
+                <label for="" class="text-base font-semibold text-gray-500">CONFIRM PASSWORD <span class="text-red-500">*</span></label>
+                <input type="password" name="" id="" placeholder="ex. John123" class="text-base px-3 py-2 rounded-md bg-gray-100 outline-sky-600 w-full"/>
+            </div>
+        </div>
+      
+      <button type="submit" class="text-base p-2 bg-sky-600 w-full rounded-md text-white">Sign Up</button>
+    </form>
+    <hr class="w-full border">
+    <div class="text-center w-full mt-10">
+      <span class="text-base ">Already have an account? <a href="{{ url_for('auth.signin') }}" class="text-sky-600 hover:underline">Sign In</a></span>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

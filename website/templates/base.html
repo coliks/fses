@@ -18,7 +18,13 @@
     />
   </head>
   <body>
-    {% block content %}
-    {% endblock %}
+    {% if current_page not in ["signup", "signin"] %}
+    {% include "components/sidenav.html" %}
+    {% include "components/topnav.html" %}
+    {% endif %}
+    
+    {% block content %} {% endblock %}
+
+    <script src="{{url_for('static', filename='javascript/general.js')}}"></script>
   </body>
 </html>

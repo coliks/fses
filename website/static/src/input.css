@@ -7,3 +7,21 @@
     @apply font-poppins bg-gray-100 text-gray-800;
   }
 }
+
+@layer components {
+  .navlink {
+    @apply rounded-md mb-2 p-4 text-base flex items-center;
+  }
+
+  .active-navlink {
+    @apply bg-sky-600 text-white;
+  }
+
+  .profile-menu-btn {
+    @apply flex items-center w-full p-3 rounded-md;
+  }
+
+  .active-menu-btn {
+    @apply bg-sky-600 text-white;
+  }
+}

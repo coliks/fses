@@ -4,3 +4,8 @@ from . import admin_bp
 @admin_bp.route('/dashboard')
 def dashboard():
     return render_template('shared/dashboard.html', current_page='dashboard')
+
+
+@admin_bp.route('/users')
+def users():
+    return render_template('admin/user_management.html', current_page='users')

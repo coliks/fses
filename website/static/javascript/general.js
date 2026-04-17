@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const profileMenuButton = document.getElementById('profile-menu-button');
+    const profileMenuBtn = document.getElementById('profile-menu-btn');
     const profileMenu = document.getElementById('profile-menu');
 
-    profileMenuButton.addEventListener('click', () => {
-        if (profileMenu.classList.contains('max-h-0')) {
-            profileMenu.classList.remove('max-h-0', 'opacity-0');
-            profileMenu.classList.add('max-h-96', 'opacity-100');
+    profileMenuBtn.addEventListener('click', () => {
+        if (profileMenu.classList.contains('w-0')) {
+            profileMenu.classList.remove('w-0', 'opacity-0', 'p-0');
+            profileMenu.classList.add('w-48', 'opacity-100', 'p-2', 'border');
+            
         } else {
-            profileMenu.classList.add('max-h-0', 'opacity-0');
-            profileMenu.classList.remove('max-h-96', 'opacity-100');
+            profileMenu.classList.remove('w-48', 'opacity-100', 'p-2', 'border');
+            profileMenu.classList.add('w-0', 'opacity-0', 'p-0');
         }
     })
 })

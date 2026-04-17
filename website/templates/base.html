@@ -20,7 +20,6 @@
   <body>
     {% if current_page not in ["signup", "signin"] %}
     {% include "components/sidenav.html" %}
-    {% include "components/topnav.html" %}
     {% endif %}
     
     {% block content %} {% endblock %}

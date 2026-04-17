@@ -10,18 +10,10 @@
 
 @layer components {
   .navlink {
-    @apply rounded-md mb-2 p-4 text-base flex items-center;
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition;
   }
 
   .active-navlink {
-    @apply bg-sky-600 text-white;
-  }
-
-  .profile-menu-btn {
-    @apply flex items-center w-full p-3 rounded-md;
-  }
-
-  .active-menu-btn {
-    @apply bg-sky-600 text-white;
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl bg-sky-600 text-white shadow-sm;
   }
 }

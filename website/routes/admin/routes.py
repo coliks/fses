@@ -5,6 +5,15 @@ from . import admin_bp
 def dashboard():
     return render_template('shared/dashboard.html', current_page='dashboard')
 
+@admin_bp.route('/establishments')
+def establishments():
+    return render_template('shared/establishment_management.html', current_page='establishments')
+
+
+@admin_bp.route('/map')
+def map():
+    return render_template('shared/map.html', current_page='map')
+
 
 @admin_bp.route('/users')
 def users():

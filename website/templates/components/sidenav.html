@@ -14,8 +14,8 @@
     <nav class="mt-4 px-3 space-y-2">
       <!-- ACTIVE -->
       <a
-        href="#"
-        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-blue-600 text-white shadow-sm"
+        href="{{ url_for('admin.dashboard') }}"
+        class="{% if current_page == 'dashboard' %}active-navlink{% else %}navlink{% endif %}"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,8 +36,8 @@
 
       <!-- ITEM -->
       <a
-        href="#"
-        class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition"
+        href="{{ url_for('admin.establishments') }}"
+        class="{% if current_page == 'establishments' %}active-navlink{% else %}navlink{% endif %}"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +58,8 @@
       </a>
 
       <a
-        href="#"
-        class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition"
+        href="{{ url_for('admin.map') }}"
+        class="{% if current_page == 'map' %} active-navlink {% else %} navlink {% endif %}"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -80,8 +80,8 @@
       </a>
 
       <a
-        href="#"
-        class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition"
+        href="{{ url_for('admin.users') }}"
+        class="{% if current_page == 'users' %} active-navlink {% else %} navlink {% endif %}"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
